@@ -13,16 +13,20 @@ const Header = () => {
             <nav className="navigation">
                 <ul className="navigation-list">
                     <li className="navigation-item">
-                        Home
+                        <i class="fas fa-home"></i>
+                        <span>Home</span>
                     </li>
                     <li className="navigation-item">
-                        About me
+                        <i class="fas fa-user"></i>
+                        <span>About me</span>
                     </li>
                     <li className="navigation-item">
-                        My projects
+                        <i class="fas fa-folder-open"></i>
+                        <span>My projects</span>
                     </li>
                     <li className="navigation-item">
-                        Contact
+                        <i class="fas fa-envelope"></i>
+                        <span>Contact me</span>
                     </li>
                 </ul>
             </nav>
