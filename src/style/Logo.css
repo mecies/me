@@ -1,0 +1,56 @@
+.logo {
+    width: 350px;
+    height: 150px;
+    position: absolute;
+    bottom: 20%;
+    font-weight: 700;
+    left: 15%;
+    font-size: 60px;
+}
+
+.logo::before {
+    content: '';
+    height: 80px;
+    width: 150px;
+    background-color: #FD85FF;
+    position: absolute;
+    z-index: -2;
+    right: 70px;
+    top: -10px;
+}
+
+.logo:hover::before {
+    transform: translateY(-10px) translateX(-10px);
+}
+
+.logo::after,
+.logo::before {
+     transition: transform 0.2s ease-out 0s;
+}
+
+.logo::after {
+    content: '';
+    height: 80px;
+    width: 150px;
+    border: solid 1px black;
+    position: absolute;
+    z-index: -1;
+    right: 75px;
+    top: -20px;
+}
+
+.logo:hover::after {
+    transform: translateY(10px) translateX(10px);
+}
+
+.logo p {
+    height: 100%;
+}
+
+.active .hamburger-inner::before {
+    
+}
+
+.active .hamburger-inner::after {
+    transform: translateY(-10px) rotate(-45deg);
+}

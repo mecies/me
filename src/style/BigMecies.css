@@ -6,9 +6,9 @@
     object-fit: cover;
     object-position: center center;
     opacity: 1;
-    transition: opacity 500ms ease 0s;
+    transition: opacity 1s ease 0s;
     position: absolute;
     right: 10vw;
     bottom: 0px;
 }
-
+/*  work on animating opacity */

@@ -1,4 +1,5 @@
 .home-container {
+    display: block;
     height: 100vh;
     background: linear-gradient(180deg, #D3AEAE 0%, rgba(216, 66, 219, 0) 81.25%);
     overflow: hidden;
