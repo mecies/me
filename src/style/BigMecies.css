@@ -1,0 +1,14 @@
+.image-container {
+    overflow: hidden;
+}
+.image{
+    width: 45%;
+    object-fit: cover;
+    object-position: center center;
+    opacity: 1;
+    transition: opacity 500ms ease 0s;
+    position: absolute;
+    right: 10vw;
+    bottom: 0px;
+}
+
