@@ -6,8 +6,8 @@ import AboutMe from './AboutMe/AboutMe';
 const App = () => {
     return (
         <div className="app-container">
-            <Home />
-            <AboutMe />
+            <Home/>
+            <AboutMe/>
         </div>
     )
 }

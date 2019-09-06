@@ -14,11 +14,11 @@ const Hamburger = () => {
                 <ul className="navigation-list">
                     <li className="navigation-item">
                         <i className="fas fa-home"></i>
-                        <span>Home</span>
+                        <a href="#home">Home</a>
                     </li>
                     <li className="navigation-item">
                         <i className="fas fa-user"></i>
-                        <span>About me</span>
+                        <a href="#aboutme">About me</a>
                     </li>
                     <li className="navigation-item">
                         <i className="fas fa-folder-open"></i>

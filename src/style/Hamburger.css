@@ -4,8 +4,8 @@
     border: 0;
     margin: 0;
     display: inline-block;
-    position: relative;
-    right: 0;
+    position: fixed;
+    right: left;
 }
 
 .hamburger,
@@ -72,7 +72,7 @@
     width: 250px;
     background-color: white;
     opacity: 0.6;
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0px;
     transform: translateX(-250px);
@@ -101,6 +101,11 @@
 
 .navigation-item i {
     margin-right: 10px;
+}
+
+.navigation-item a {
+    color: black;
+    text-decoration: none;
 }
 
 .navigation-item:hover {

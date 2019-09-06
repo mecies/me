@@ -5,8 +5,8 @@ import Logo from './Logo';
 
 const Home = () => {
     return (
-        <div className="home-container">
-            <Header />
+        <div className="home-container" id="home">
+            <Header/>
             <BigMecies />
             <Logo />
         </div>
