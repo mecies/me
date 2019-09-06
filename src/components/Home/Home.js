@@ -1,8 +1,7 @@
 import React from 'react';
 import Header from './Header';
 import BigMecies from '../Home/BigMecies';
-import Logo from './Logo.js'
-import SpiralArrow from './SpiralArrow';
+import Logo from './Logo';
 
 const Home = () => {
     return (
@@ -10,7 +9,6 @@ const Home = () => {
             <Header />
             <BigMecies />
             <Logo />
-            <SpiralArrow />
         </div>
     )
 }

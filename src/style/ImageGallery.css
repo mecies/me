@@ -1,0 +1,28 @@
+.image-gallery {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.image-gallery .gal-image {
+    width: 300px;
+    border: 2px solid #FD85FF;
+    position: absolute;
+}
+
+.image-gallery .one {
+    left: 50px;
+    bottom: 150px;
+}
+
+.image-gallery .two {
+    left: 70px;
+    top: 200px;
+}
+
+.image-gallery .three {
+    left: 350px;
+}
+
+
