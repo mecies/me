@@ -6,6 +6,7 @@
     display: inline-block;
     position: fixed;
     right: left;
+    z-index: 10;
 }
 
 .hamburger,
@@ -70,13 +71,13 @@
 .navigation {
     height: 100vh;
     width: 250px;
-    background-color: white;
-    opacity: 0.6;
+    background-color: #F7F7F7;
     position: fixed;
+    opacity: 0.8;
     top: 0;
     left: 0px;
     transform: translateX(-250px);
-    z-index: 1;
+    z-index: 10;
 }
 
 .navigation-active {
