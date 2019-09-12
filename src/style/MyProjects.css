@@ -1,13 +1,22 @@
 .my-projects {
-    height: 100vh;
+    max-height: 100vh;
     position: relative;
     display: grid;
     grid-template-columns: 3fr 2fr;
+    width: 90%;
+    align-items: center;
+}
+
+.container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    height: 100vh;
 }
 
 .my-projects-logo {
     position: relative;
-    left: 50px;
+    left: 100px;
     bottom: unset;
 }
 
@@ -40,6 +49,10 @@
     margin-bottom: 50px;
     margin-top: 50px;
     border-bottom: black 2px solid;
+    display: flex;
+    align-items: center;
+    padding-left: 5px;
+    padding-right: 5px;
 }
 
 .my-projects-preview .big-rec {
@@ -55,11 +68,12 @@
     grid-template-rows: 1fr 1fr;
     grid-template-columns: 1fr 1fr;
     margin-left: 50px;
+    height: 100%;
 }
 
 .project-list-item{
-    height: 240px;
-    width: 300px;
+    height: 200px;
+    width: 260px;
     background-color: lightblue;
     display: grid;
     grid-template-rows: 1fr 40px;

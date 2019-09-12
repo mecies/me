@@ -1,32 +1,36 @@
 import React from 'react';
 
-const ProjectList = () => {
-    return (
-        <div className="my-projects-list">
-            <div className="project-list-item top-item">
-                <img src="" alt="" />
-                <p>Description</p>
-            </div>
-            <div className="project-list-item top-item">
-                <img src="" alt="" />
-                <p>Description</p>
-            </div>
-            <div className="project-list-item bottom-item">
-                <img src="" alt="" />
-                <p>Description</p>
-            </div>
-            <div className="project-list-item bottom-item">
-                <img src="" alt="" />
-                <p>Description</p>
-            </div>
-            <div>
+class ProjectList extends React.Component {
 
-            </div>
-            <div>
+    previewOne = { title: "project 1", problem: "problem 1", solution: "solution 1" }
+    previewTwo = { title: "project 2", problem: "problem 2", solution: "solution 2" }
+    previewThree = { title: "project 3", problem: "problem 3", solution: "solution 3" }
+    previewFour = { title: "project 4", problem: "problem 4", solution: "solution 4" }
 
+    render(){
+        return (
+            <div className="my-projects-list">
+                <div className="project-list-item top-item" onClick = { () => { this.props.onProjectClick(this.previewOne) } } >
+                    <img src="" alt="" />
+                    <p>Description 1</p>
+                </div>
+                <div className="project-list-item top-item" onClick = { () => { this.props.onProjectClick(this.previewTwo) } }>
+                    <img src="" alt="" />
+                    <p>Description 2</p>
+                </div>
+                <div className="project-list-item bottom-item" onClick = { () => { this.props.onProjectClick(this.previewThree) } }>
+                    <img src="" alt="" />
+                    <p>Description 3</p>
+                </div>
+                <div className="project-list-item bottom-item" onClick = { () => { this.props.onProjectClick(this.previewFour) } }>
+                    <img src="" alt="" />
+                    <p>Description 4</p>
+                </div>
             </div>
-        </div>
-    )
+        )
+    }
+
+    
 }
 
 export default ProjectList;
