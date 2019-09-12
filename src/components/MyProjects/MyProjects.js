@@ -10,7 +10,6 @@ class MyProjects extends React.Component {
         this.state = {
             previewContent: {
                 title: 'siema',
-                problem: 'siema ja problem',
                 solution: 'siema ja solution'
             }
         }
@@ -26,7 +25,6 @@ class MyProjects extends React.Component {
         this.setState({
             previewContent: {
                 title: previewContent.title,
-                problem: previewContent.problem,
                 solution: previewContent.solution
             }
         })
@@ -34,7 +32,7 @@ class MyProjects extends React.Component {
 
     render() {
         return (
-            <div className="container">
+            <div className="container" id="myprojects">
                 <div className="my-projects">
                     <ProjectList onProjectClick={this.onProjectClick}/>
                     <div className="my-projects-side">

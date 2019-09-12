@@ -22,7 +22,7 @@ const Hamburger = () => {
                     </li>
                     <li className="navigation-item">
                         <i className="fas fa-folder-open"></i>
-                        <span>My projects</span>
+                        <a href="#myprojects">My projects</a>
                     </li>
                     <li className="navigation-item">
                         <i className="fas fa-envelope"></i>

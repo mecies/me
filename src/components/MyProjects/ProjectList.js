@@ -2,10 +2,10 @@ import React from 'react';
 
 class ProjectList extends React.Component {
 
-    previewOne = { title: "project 1", problem: "problem 1", solution: "solution 1" }
-    previewTwo = { title: "project 2", problem: "problem 2", solution: "solution 2" }
-    previewThree = { title: "project 3", problem: "problem 3", solution: "solution 3" }
-    previewFour = { title: "project 4", problem: "problem 4", solution: "solution 4" }
+    previewOne = { title: "project 1", solution: "solution 1" }
+    previewTwo = { title: "project 2", solution: "solution 2" }
+    previewThree = { title: "project 3", solution: "solution 3" }
+    previewFour = { title: "project 4", solution: "solution 4" }
 
     render(){
         return (
