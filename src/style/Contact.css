@@ -1,3 +1,35 @@
 .contact {
     height: 100vh;
+    background: linear-gradient(180deg, rgba(216, 66, 219, 0) 18.75%, #D3AEAE 100%);
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
+
+.drag-top {
+    font-size: 80px;
+    color: white;
+    cursor: pointer;
+    position: absolute;
+    bottom: 20px;
+}
+
+.contact-details {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 60%;
+    height: 50%;
+    border: 1px solid black;
+}
+
+.details-left{
+
+    background: red;
+}
+
+.details-right {
+    background: blue;
+}
+

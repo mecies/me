@@ -6,6 +6,8 @@
     font-weight: 700;
     left: 200px;
     font-size: 60px;
+    font-family: "Roboto",
+    sans-serif;
 }
 
 .logo::before {
