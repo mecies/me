@@ -1,10 +1,10 @@
 import React from 'react';
 
-const Logo = () => {
+const Logo = (props) => {
     return (
         <div className="logo">
             <p>
-                Frontend<br />Developer
+                {props.first}<br />{props.second}
             </p>
         </div>
     )

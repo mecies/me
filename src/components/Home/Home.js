@@ -8,7 +8,7 @@ const Home = () => {
         <div className="home-container" id="home">
             <Header/>
             <BigMecies />
-            <Logo />
+            <Logo first="Frontend" second="Developer"/>
         </div>
     )
 }

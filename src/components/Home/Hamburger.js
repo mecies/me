@@ -17,16 +17,16 @@ const Hamburger = () => {
                         <a href="#home">Home</a>
                     </li>
                     <li className="navigation-item">
-                        <i className="fas fa-user"></i>
-                        <a href="#aboutme">About me</a>
-                    </li>
-                    <li className="navigation-item">
                         <i className="fas fa-folder-open"></i>
                         <a href="#myprojects">My projects</a>
                     </li>
                     <li className="navigation-item">
+                        <i className="fas fa-user"></i>
+                        <a href="#aboutme">About me</a>
+                    </li>
+                    <li className="navigation-item">
                         <i className="fas fa-envelope"></i>
-                        <span>Contact me</span>
+                        <a href="#contactme">Contact me</a>
                     </li>
                 </ul>
             </nav>

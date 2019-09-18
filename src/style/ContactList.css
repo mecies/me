@@ -1,8 +1,45 @@
 .contact-list {
-    width: 100%;
+    width: 60%;
     height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
 }
 
-.contact-item i {
-    font-size: 20px;
+.contact-item {
+    margin-bottom: 20px;
+    height: 50px;
+    display: flex; 
+    align-items: center;
+    
 }
+
+.contact-item a:any-link {
+    text-decoration: none;
+}
+
+.contact-item a {
+    text-decoration: none;
+    color: black;
+    margin-left: 20px;
+    transition: all 0.2s ease-in-out;
+}
+
+.contact-item a:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.contact-item a span {
+    font-size: 30px;
+    font-family: "Roboto",
+    sans-serif;
+}
+
+.contact-item a i {
+    font-size: 40px;
+    margin-right: 20px;
+    position: relative;
+    top: 4px;
+}
+

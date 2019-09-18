@@ -8,13 +8,13 @@
     position: absolute;
     right: 0px;
     top: 0px;
+    display: flex;
 }
 
 .icons a {
     color: black;
     font-size: 40px;
     margin-left: 20px;
-    transition: color 0.2s ease-in-out;
 }
 
 .icons a:any-link {
@@ -22,9 +22,14 @@
 }
 
 .icons a:-webkit-any-link {
-   color: black;
+    color: black;
 }
 
-.icons a:hover {
-    color: #F7F7F7;
+.icons .icon {
+    transition: all 0.2s ease-in-out;
+}
+
+.icons .icon:hover {
+    transform: scale(1.2);
+    cursor: pointer;
 }

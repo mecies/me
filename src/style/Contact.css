@@ -1,6 +1,6 @@
 .contact {
     height: 100vh;
-    background: linear-gradient(180deg, rgba(216, 66, 219, 0) 18.75%, #D3AEAE 100%);
+    background: linear-gradient(180deg, rgba(216, 66, 219, 0) 21%, #D3AEAE 100%);
     position: relative;
     display: flex;
     justify-content: center;
@@ -18,18 +18,37 @@
 
 .contact-details {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 400px 600px;
     width: 60%;
-    height: 50%;
-    border: 1px solid black;
+    height: 400px;
+    font-family: 'Manjari',
+    sans-serif;
+    position: relative;
 }
 
-.details-left{
-
-    background: red;
+.contactme-logo {
+   bottom: unset;
+   left: unset;
+   position: absolute;
+   top: 100px;
+   right: 100px;
 }
 
-.details-right {
-    background: blue;
+.details-right{
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+}
+
+.details-left {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.contact-text {
+    font-size: 25px;
+    line-height: 1.4;
+    margin-top: 100px;
 }
 

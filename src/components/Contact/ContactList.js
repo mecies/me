@@ -4,16 +4,24 @@ const ContactList = () => {
     return (
         <ul className="contact-list">
             <li className="contact-item">
-                <i class="fas fa-envelope-square"></i><span>maciekhnat@gmail.com</span>
+                <a href='mailto:maciekhnat@gmail.com'>
+                    <i className="fas fa-envelope-square"></i><span>Send me an email</span>
+                </a>
             </li>
             <li className="contact-item">
-                <i className="fab fa-github-square"></i><span>github.com/mecies</span>
-            </li>
-            <li>
-                <i class="fab fa-linkedin"></i><span>linkedin</span>
+                <a href="https://github.com/mecies" target="_blank" rel="noopener noreferrer"> 
+                    <i className="fab fa-github-square"></i><span>Github</span>
+                </a>
             </li>
             <li className="contact-item">
-                <i class="fab fa-facebook-square"></i><span>facebook</span>
+                <a href="https://www.linkedin.com/in/maciej-hnat-82203b157/" target="_blank" rel="noopener noreferrer">
+                    <i className="fab fa-linkedin"></i><span>LinkedIn</span>
+                </a>
+            </li>
+            <li className="contact-item">
+                <a href="https://www.facebook.com/maciej.hnat.3" target="_blank" rel="noopener noreferrer">
+                    <i className="fab fa-facebook-square"></i><span>Facebook</span>
+                </a>
             </li>
             
         </ul>
