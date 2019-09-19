@@ -48,3 +48,17 @@
 .logo p {
     height: 100%;
 }
+
+@media (max-width: 600px) {
+    .logo {
+        left: 150px;
+    }
+}
+
+@media (max-width: 480px) {
+    .logo{
+        bottom: unset;
+        left: 10%;
+        top: 40%;
+    }
+}

@@ -1,8 +1,8 @@
 @import url("reset.css");
-@import url("Home.css");
-@import url("Hamburger.css");
-@import url("Header.css");
-@import url("BigMecies.css");
+@import url("./Home/Home.css");
+@import url("./Home/Hamburger.css");
+@import url("./Home/Header.css");
+@import url("./Home/BigMecies.css");
 @import url("Logo.css");
 @import url("SpiralArrow.css");
 @import url("AboutMe.css");
@@ -12,4 +12,5 @@
 @import url("ProjectList.css");
 @import url("Contact.css");
 @import url("ContactList.css");
+@import url("ScrollArrow.css");
 

@@ -7,7 +7,6 @@
     position: fixed;
     right: left;
     z-index: 10;
-    
 }
 
 .hamburger,
@@ -21,6 +20,11 @@
     display: inline-block;
     position: relative;
     background: transparent;
+    transition: transform .1s ease-in-out;
+}
+
+.hamburger-box:hover {
+    transform: scale(1.1);
 }
 
 .hamburger-inner {
@@ -120,4 +124,22 @@
 .navigation-item:hover {
     background-color: pink;
     cursor: pointer;
+}
+
+@media (max-width: 480px) {
+    .navigation {
+        width: 100vw;
+        background-color: #F7F7F7;
+        opacity: 1;
+        transform: translateX(-480px);
+    }
+
+    .navigation-active {
+        transform: translateX(0px);
+    }
+
+    .active {
+        transform: translateX(calc(100vw - 80px));
+        z-index: 11;
+    }
 }

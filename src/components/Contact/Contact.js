@@ -1,13 +1,8 @@
 import React from 'react';
 import ContactList from './ContactList';
+import ScrollArrow from './ScrollArrow';
 
 class Contact extends React.Component {
-
-    scrollToTop() {
-        document.body.scrollTop = 0;
-        document.documentElement.scrollTop = 0;
-        console.log('clicked')
-    }
 
     render () {
         return (
@@ -23,7 +18,7 @@ class Contact extends React.Component {
                         <ContactList />
                     </div>
                 </div>  
-                <i id ="drag-top" className="drag-top fas fa-caret-up" onClick={this.scrollToTop}></i>
+                <ScrollArrow />
             </div>
         )
     }   

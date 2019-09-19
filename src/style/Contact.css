@@ -8,14 +8,6 @@
     flex-direction: column;
 }
 
-.drag-top {
-    font-size: 80px;
-    color: white;
-    cursor: pointer;
-    position: absolute;
-    bottom: 20px;
-}
-
 .contact-details {
     display: grid;
     grid-template-columns: 400px 600px;

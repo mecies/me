@@ -33,3 +33,5 @@
     transform: scale(1.2);
     cursor: pointer;
 }
+
+@media (min-width: 1200px) {}
