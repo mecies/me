@@ -45,7 +45,7 @@
     transform: translateY(10px) translateX(10px);
 }
 
-.logo p {
+.logo span {
     height: 100%;
 }
 
@@ -60,5 +60,7 @@
         bottom: unset;
         left: 10%;
         top: 40%;
+        font-size: 48px;
+        width: 250px;
     }
 }

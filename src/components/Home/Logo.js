@@ -3,9 +3,9 @@ import React from 'react';
 const Logo = (props) => {
     return (
         <div className="logo">
-            <p>
+            <span>
                 {props.first}<br />{props.second}
-            </p>
+            </span>
         </div>
     )
 }

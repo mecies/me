@@ -77,3 +77,66 @@
     color: #FD85FF;
     text-decoration: none;
 }
+
+@media (max-width: 1350px) {
+
+    .aboutme {
+        grid-template-columns: 500px 2fr;
+    }
+
+    .aboutme-description {
+        top: 50%;
+        width: 350px;
+        left: 150px;
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 900px) {
+
+    .aboutme {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 500px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .aboutme-description {
+        position: relative;
+        top: 150px;
+        width: 350px;
+        left: 10px;
+        font-size: 16px;
+    }
+
+    .aboutme-logo {
+        left: 100px;
+    }
+}
+
+@media (max-width: 700px) {
+
+    .aboutme-logo {
+        left: 90px;
+    }
+}
+
+@media (max-width: 480px) {
+
+    .aboutme {
+        height: 100vh;
+    }
+
+    .aboutme-description {  
+        width: 300px;
+        top: 100px;
+    }
+
+    .aboutme-logo {
+        left: 50px;
+        font-size: 48px;
+        width: 250px;
+    }
+}
+
