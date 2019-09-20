@@ -6,6 +6,7 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    position: relative;
 }
 
 .contact-details {
@@ -88,5 +89,20 @@
 @media (max-width: 480px) {
     .contact-text {
         width: 90%;
+        
     }
+
+    .contact-details {
+        margin-top: 50px;
+    }
+
+    .contactme-logo {
+        position: relative;
+        right: unset;
+        top: 0px;
+        font-size: 48px;
+        width: 250px;
+        height: 70px;
+    }
+
 }

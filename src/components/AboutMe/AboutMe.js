@@ -1,13 +1,12 @@
 import React from 'react';
 import ImageGallery from './ImageGallery';
+import Logo from '../Home/Logo';
 
 const AboutMe = () => {
     return (
             <div className="aboutme" id="aboutme">
                 <div className="aboutme-left">
-                    <div className="aboutme-logo logo">
-                        <p>About me</p>
-                    </div>
+                    <Logo first="About me" second="" className="aboutme-logo"/>
                     <p className="aboutme-description">
                         A web developer located in <a href="https://www.wroclaw.pl/" target="_blank" rel="noopener noreferrer">Wroclaw</a>. <br />
                         Currently studying Business Informatics at the <a href="http://www.ue.wroc.pl/" target="_blank" rel="noopener noreferrer">University of Economics</a> in Wroclaw. <b />

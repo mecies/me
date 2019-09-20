@@ -8,49 +8,34 @@
 }
 
 .aboutme-logo {
-    width: 300px;
-    height: 100px;
-    top: 20%;
-    font-weight: 700;
-    left: 200px;
-    font-size: 60px;
     position: relative;
+    left: unset;
+    top: 50px;
+    right: unset;
+    bottom: unset;
 }
 
 .aboutme-logo::before {
-    content: '';
-    height: 80px;
-    width: 150px;
-    background-color: #FD85FF;
     position: absolute;
-    z-index: 0;
     left: -20px;
     top: 5px;
+    z-index: 1;
 }
 
 .aboutme-logo::after {
-    content: '';
-    height: 80px;
-    width: 150px;
-    border: solid 1px black;
-    position: absolute;
-    z-index: 1;
+    
     left: -15px;
     top: -5px;
+    z-index: 1;
 }
 
-.aboutme-logo p {
+.aboutme-logo span {
     position: relative;
-    z-index: 0;
+    z-index: 2;
 }
 
 .aboutme-logo:hover::before {
     transform: translateY(-10px) translateX(10px);
-}
-
-.aboutme-logo::after,
-.aboutme-logo::before {
-    transition: transform 0.2s ease-out 0s;
 }
 
 .aboutme-logo:hover::after {
@@ -58,14 +43,20 @@
 }
 
 .aboutme-description {
-    position: absolute;
-    top: 50%;
+    position: relative;
+    bottom: 50px;
     width: 450px;
-    left: 220px;
     font-size: 20px;
     line-height: 1.3;
     font-family: 'Manjari',
     sans-serif;
+}
+
+.aboutme-left {
+    display: grid;
+    grid-template-rows: 200px 1fr;
+    justify-content: center;
+    align-items: center;
 }
 
 .aboutme-description a{
@@ -85,9 +76,7 @@
     }
 
     .aboutme-description {
-        top: 50%;
         width: 350px;
-        left: 150px;
         font-size: 20px;
     }
 }
@@ -96,18 +85,15 @@
 
     .aboutme {
         grid-template-columns: 1fr;
-        grid-template-rows: 1fr 500px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+        grid-template-rows: 400px 400px;
+        display: grid;
     }
 
     .aboutme-description {
         position: relative;
-        top: 150px;
         width: 350px;
-        left: 10px;
         font-size: 16px;
+        top: 20px;
     }
 
     .aboutme-logo {
@@ -115,28 +101,18 @@
     }
 }
 
-@media (max-width: 700px) {
-
-    .aboutme-logo {
-        left: 90px;
-    }
-}
 
 @media (max-width: 480px) {
 
     .aboutme {
         height: 100vh;
+        grid-template-rows: 1fr 1fr;
     }
 
     .aboutme-description {  
         width: 300px;
-        top: 100px;
+        top: 0px;
     }
 
-    .aboutme-logo {
-        left: 50px;
-        font-size: 48px;
-        width: 250px;
-    }
 }
 

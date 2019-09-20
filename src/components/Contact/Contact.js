@@ -1,13 +1,14 @@
 import React from 'react';
 import ContactList from './ContactList';
 import ScrollArrow from './ScrollArrow';
+import Logo from '../Home/Logo'
 
 class Contact extends React.Component {
 
     render () {
         return (
             <div id="contactme" className="contact">
-                <div className="contactme-logo logo">Contact me</div>
+                <Logo first="Contact me" second ="" className="contactme-logo"/>    
                 <div className="contact-details">
                     <div className="details-left">
                         <p className="contact-text">

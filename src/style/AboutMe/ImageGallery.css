@@ -61,7 +61,7 @@
 @media (max-width: 900px) {
 
     .slider-container {
-        top: 200px
+        top: unset;
     }
 }
 
