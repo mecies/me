@@ -12,13 +12,16 @@ class SimpleSlider extends React.Component {
         };
     }
 
+
+  
     renderProps = () => {
         if(this.state.show) {
+            
             this.state.show.map(slide => {
-                return (
-                    <React.Fragment key={slide.key}>
+                return (          
+                    <div key={slide.key}>
                         {slide}
-                    </React.Fragment>
+                    </div>
                 )
             })
         }

@@ -3,6 +3,7 @@ import ProjectList from './ProjectList';
 import Preview from './Preview';
 import Logo from '../Logo';
 import SimpleSlider from '../SimpleSlider';
+import projectDescription from './projectDescription';
 
 class MyProjects extends React.Component {
 
@@ -13,13 +14,14 @@ class MyProjects extends React.Component {
             previewContent: {
                 title: 'Select a project',
                 solution: 'My contribution to the project'
-            }
+            },
+            sliderContent: projectDescription
         }
     }
 
     updatePreview(previewContent) {
         this.setState({
-            previewContent: previewContent
+            previewContent
         })
     }
 
@@ -34,21 +36,41 @@ class MyProjects extends React.Component {
 
     renderProjects() {
         return [
-            <div key="1" className="project-list-item" onClick={() => { this.props.onProjectClick(this.state.previewOne) }} >
-                <img src="" alt="" />
-                <p>Description 1</p>
+            <div key="1" className="project-list-item mobile" onClick={() => this.onProjectClick(this.state.sliderContent.One)}>
+                <p className="title">Native Speaker</p>
+                <img className="proj-img" src="images/img_gal.jpg" alt="placeholder" />
+                <div className="test">
+                    <p>
+                        {this.state.sliderContent.One.solution}
+                    </p>
+                </div>
             </div>,
-            <div key="2" className="project-list-item" onClick={() => { this.props.onProjectClick(this.state.previewTwo) }}>
-                <img src="" alt="" />
-                <p>Description 2</p>
+            <div key="2" className="project-list-item mobile" onClick={() => this.onProjectClick(this.state.sliderContent.Two)}>
+                <p className="title">Portfolio</p>
+                <img className="proj-img" src="images/img_gal.jpg" alt="placeholder" />
+                <div className="test">
+                    <p>
+                        {this.state.sliderContent.Two.solution}
+                    </p>
+                </div>
             </div>,
-            <div key="3" className="project-list-item" onClick={() => { this.props.onProjectClick(this.state.previewThree) }}>
-                <img src="" alt="" />
-                <p>Description 3</p>
+            <div key="3" className="project-list-item mobile" onClick={() => this.onProjectClick(this.state.sliderContent.Three)}>
+                <p className="title">Equarium</p>
+                <img className="proj-img" src="images/img_gal.jpg" alt="placeholder" />
+                <div className="test">
+                    <p>
+                        {this.state.sliderContent.Three.solution}
+                    </p>
+                </div>
             </div>,
-            <div key="4" className="project-list-item" onClick={() => { this.props.onProjectClick(this.state.previewFour) }}>
-                <img src="" alt="" />
-                <p>Description 4</p>
+            <div key="4" className="project-list-item mobile" onClick={() => this.onProjectClick(this.state.sliderContent.Four)}>
+                <p className="title">Weather App</p>
+                <img className="proj-img" src="images/img_gal.jpg" alt="placeholder" />
+                <div className="test">
+                    <p>
+                        {this.state.sliderContent.Four.solution}
+                    </p>
+                </div>
             </div>
         ]
     }
@@ -64,7 +86,7 @@ class MyProjects extends React.Component {
                         <ProjectList onProjectClick={this.onProjectClick} />
                         <Preview previewContent={this.state.previewContent} />
                         <div className="slider-container">
-                            <SimpleSlider show={this.renderProjects()} />
+                            <SimpleSlider show={this.renderProjects()} updatePreview={this.updatePreview} />
                         </div>
                     </div>
                 </div>

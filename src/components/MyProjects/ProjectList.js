@@ -1,4 +1,5 @@
 import React from 'react';
+import projectDescription from './projectDescription'
 
 class ProjectList extends React.Component {
 
@@ -6,31 +7,28 @@ class ProjectList extends React.Component {
         super(props)
 
         this.state = {
-            previewOne: { title: "project 1", solution: "solution 1" },
-            previewTwo: { title: "project 2", solution: "solution 2" },
-            previewThree: { title: "project 3", solution: "solution 3" },
-            previewFour: { title: "project 4", solution: "solution 4" }
+            previewContent: projectDescription
         }
     }
 
     render(){
         return (
             <div className="my-projects-list">
-                <div className="project-list-item" onClick = {() => { this.props.onProjectClick(this.state.previewOne)}} >
+                <div className="project-list-item" onClick={() => { this.props.onProjectClick(this.state.previewContent.One)}} >
                     <img src="" alt="" />
-                    <p>Description 1</p>
+                    <p>Native Speaker</p>
                 </div>
-                <div className="project-list-item" onClick={() => { this.props.onProjectClick(this.state.previewTwo)}}>
+                <div className="project-list-item" onClick={() => { this.props.onProjectClick(this.state.previewContent.Two)}}>
                     <img src="" alt="" />
-                    <p>Description 2</p>
+                    <p>Portfolio</p>
                 </div>
-                <div className="project-list-item" onClick={() => { this.props.onProjectClick(this.state.previewThree)}}>
+                <div className="project-list-item" onClick={() => { this.props.onProjectClick(this.state.previewContent.Three)}}>
                     <img src="" alt="" />
-                    <p>Description 3</p>
+                    <p>Equarium</p>
                 </div>
-                <div className="project-list-item" onClick={() => { this.props.onProjectClick(this.state.previewFour)}}>
+                <div className="project-list-item" onClick={() => { this.props.onProjectClick(this.state.previewContent.Four)}}>
                     <img src="" alt="" />
-                    <p>Description 4</p>
+                    <p>Weather App</p>
                 </div>
             </div>
         )
