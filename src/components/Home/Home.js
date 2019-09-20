@@ -1,7 +1,7 @@
 import React from 'react';
 import Header from './Header';
 import BigMecies from '../Home/BigMecies';
-import Logo from './Logo';
+import Logo from '../Logo';
 
 const Home = () => {
     return (

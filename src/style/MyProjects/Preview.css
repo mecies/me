@@ -2,8 +2,6 @@
     background-color: #F7F7F7;
     height: 450px;
     width: 400px;
-    position: relative;
-    bottom: 145px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -15,7 +13,7 @@
 .my-projects-preview .rec {
     background-color: white;
     width: 70%;
-    height: 40px;
+    height: 35px;
     margin-top: 50px;
     border-bottom: black 2px solid;
     display: flex;
@@ -25,7 +23,7 @@
 }
 
 .my-projects-preview .big-rec {
-    height: 180px;
+    height: 160px;
     margin-top: 0px;
     border: none;
 }
@@ -49,4 +47,18 @@
     color:  #FD85FF;
     text-decoration: none;
     font-weight: 700;
+}
+
+@media (max-width: 1200px) {
+
+    .my-projects-preview {
+        height: 400px;
+        width: 350px;
+    }
+       
+}
+
+@media (max-width: 1200px) {
+
+    
 }

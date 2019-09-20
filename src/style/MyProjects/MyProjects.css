@@ -1,0 +1,54 @@
+.my-projects {
+    height: 100%;
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 200px 1fr;
+    width: 90%;
+    align-items: center;
+    font-family: 'Manjari',
+    sans-serif;
+    justify-content: center;
+}
+
+.container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+}
+
+.my-projects-logo-container {
+    width: 60%;
+    display: flex;
+    justify-self: center;
+    margin-top: 100px;
+    justify-content: flex-end;
+}
+
+
+.my-projects-logo {
+    
+    bottom: unset;
+}
+
+.my-projects-bottom {
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+    height: 100%;
+    align-content: center;
+
+}
+
+@media (max-width: 1024px) {
+
+}
+
+@media (max-width: 900px) {
+
+    .my-projects-list {
+        display: none;
+    }
+}
+
+

@@ -6,9 +6,9 @@
 @import url("Logo.css");
 @import url("./AboutMe/AboutMe.css");
 @import url("./AboutMe/ImageGallery.css");
-@import url("MyProjects.css");
-@import url("Preview.css");
-@import url("ProjectList.css");
+@import url("./MyProjects/MyProjects.css");
+@import url("./MyProjects/Preview.css");
+@import url("./MyProjects/ProjectList.css");
 @import url("./Contact/Contact.css");
 @import url("./Contact/ContactList.css");
 @import url("./Contact/ScrollArrow.css");

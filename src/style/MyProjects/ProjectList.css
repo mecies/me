@@ -1,11 +1,11 @@
 .my-projects-list {
     display: grid;
-    justify-items: center;
-    align-items: center;
-    grid-template-rows: 1fr 1fr;
-    grid-template-columns: 1fr 1fr;
-    margin-left: 50px;
+    grid-template-rows: 200px 200px;
+    grid-template-columns: 260px 260px;
+    grid-gap: 50px;
     height: 100%;
+    align-items: center;
+    justify-content: center;
 }
 
 .project-list-item{
@@ -25,20 +25,32 @@
     cursor: pointer;
 }
 
-.top-item {
-    position: relative;
-    top: 100px;
-}
-
-.bottom-item {
-    position: relative;
-    bottom: 50px;
-}
-
 .project-list-item p{
     background-color: #F7F7F7;
     display: flex;
     align-items: center;
     padding-left: 5px;
     padding-right: 5px;
+}
+
+@media (max-width: 1200px) {
+
+    .my-projects-list {
+        grid-template-rows: 170px 170px;
+        grid-template-columns: 220px 220px;
+        grid-gap: 60px;
+    }
+
+    .project-list-item {
+        height: 170px;
+        width: 220px;
+    }
+
+}
+
+@media (max-width: 1200px) {
+
+    .my-projects-list {
+        display: none;
+    }
 }

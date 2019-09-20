@@ -1,7 +1,7 @@
 import React from 'react';
 import ContactList from './ContactList';
 import ScrollArrow from './ScrollArrow';
-import Logo from '../Home/Logo'
+import Logo from '../Logo'
 
 class Contact extends React.Component {
 

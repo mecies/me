@@ -1,6 +1,6 @@
 import React from 'react';
 import ImageGallery from './ImageGallery';
-import Logo from '../Home/Logo';
+import Logo from '../Logo';
 
 const AboutMe = () => {
     return (
