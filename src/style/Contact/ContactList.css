@@ -87,3 +87,21 @@
         width: unset;
     }
 }
+
+@media (max-width: 768px) {
+
+    .contact-item a span {
+        display: none;
+    }
+
+    .contact-list {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        align-items: center;
+    }
+
+    .contact-item a i {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+}

@@ -8,7 +8,9 @@ class Contact extends React.Component {
     render () {
         return (
             <div id="contactme" className="contact">
-                <Logo first="Contact me" second ="" className="contactme-logo"/>    
+                <div className="logo-container">
+                    <Logo first="Contact me" second="" className="contactme-logo" />
+                </div>
                 <div className="contact-details">
                     <div className="details-left">
                         <p className="contact-text">
