@@ -1,0 +1,25 @@
+.ue-scroll {
+    font-size: 80px;
+    color: white;
+    cursor: pointer;
+    position: absolute;
+    bottom: 20px;
+    left: 49%;
+}
+
+@media (max-width: 1024px) {
+    .ue-scroll {
+       left: 48%;
+    }
+}
+@media (max-width: 768px) {
+    .ue-scroll {
+        left: 46%;
+    }
+}
+@media (max-width: 480px) {
+    
+   .ue-scroll {
+       left: 45%;
+   }
+}

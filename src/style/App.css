@@ -4,13 +4,12 @@
 @import url("./Home/Header.css");
 @import url("./Home/BigMecies.css");
 @import url("Logo.css");
-@import url("SpiralArrow.css");
-@import url("AboutMe.css");
-@import url("ImageGallery.css");
+@import url("./AboutMe/AboutMe.css");
+@import url("./AboutMe/ImageGallery.css");
 @import url("MyProjects.css");
 @import url("Preview.css");
 @import url("ProjectList.css");
-@import url("Contact.css");
-@import url("ContactList.css");
-@import url("ScrollArrow.css");
+@import url("./Contact/Contact.css");
+@import url("./Contact/ContactList.css");
+@import url("./Contact/ScrollArrow.css");
 

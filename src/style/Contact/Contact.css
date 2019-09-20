@@ -1,0 +1,92 @@
+.contact {
+    height: 100vh;
+    background: linear-gradient(180deg, rgba(216, 66, 219, 0) 21%, #D3AEAE 100%);
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.contact-details {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 60%;
+    height: 400px;
+    font-family: 'Manjari',
+    sans-serif;
+    position: relative;
+}
+
+.contactme-logo {
+   bottom: unset;
+   left: unset;
+   position: absolute;
+   top: 100px;
+   right: 100px;
+}
+
+.details-right{
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+}
+
+.details-left {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.contact-text {
+    font-size: 25px;
+    line-height: 1.4;
+    margin-top: 100px;
+}
+
+@media (max-width: 1200px) {
+
+    .contact-details {
+        width: 70%;
+    }
+}
+
+@media (max-width: 1024px) {
+
+    .contact-text {
+        font-size: 20px;
+        line-height: 1.4;
+        margin-top: 100px;
+    }
+}
+
+@media (max-width: 768px) {
+    .contact-details {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr; 
+    }
+
+    .contact-text {
+        width: 60%;
+        margin-top: 0px;
+        margin-bottom: 50px;
+    }
+
+    .details-right {
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .details-left {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 480px) {
+    .contact-text {
+        width: 90%;
+    }
+}

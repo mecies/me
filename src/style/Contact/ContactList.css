@@ -1,0 +1,89 @@
+.contact-list {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.contact-item {
+    margin-bottom: 20px;
+    height: 50px;
+    display: flex; 
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.contact-item a:any-link {
+    text-decoration: none;
+}
+
+.contact-item a {
+    text-decoration: none;
+    color: black;
+    transition: all 0.2s ease-in-out;
+    height: 100%;
+}
+
+.contact-item a:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.contact-item a span {
+    font-size: 30px;
+    font-family: "Roboto",
+    sans-serif;
+}
+
+.contact-item a i {
+    font-size: 40px;
+    margin-left: 20px;
+    position: relative;
+    top: 4px;
+}
+
+@media (max-width: 1024px) {
+
+    .contact-item a span {
+        font-size: 25px;
+    }
+
+    .contact-item a i {
+        font-size: 35px;
+    }
+
+    .contact-item {
+        margin-bottom: 10px;
+    }
+
+    .contact-list {
+        margin-bottom: 30px;
+    }
+}
+
+@media (max-width: 768px) {
+    .contact-item a span {
+        order: 2;
+    }
+
+    .contact-item a i {
+        order: 1;
+        top: unset;
+        margin-left: 0px;
+        margin-right: 10px;
+    }
+
+    .contact-item a {
+        display: flex;
+        align-items: center;
+    }
+
+    .contact-item {
+        justify-content: flex-start;
+    }
+
+    .contact-list {
+        width: unset;
+    }
+}
