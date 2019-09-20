@@ -25,6 +25,11 @@
     cursor: pointer;
 }
 
+.slider-container .image-container:hover {
+    transform: unset;
+    cursor: pointer;
+}
+
 .project-list-item p{
     background-color: #F7F7F7;
     display: flex;
