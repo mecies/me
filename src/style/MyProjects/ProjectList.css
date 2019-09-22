@@ -20,6 +20,12 @@
     sans-serif !important;
 }
 
+.proj-img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
 .project-list-item:hover {
     transform: scale(1.1);
     cursor: pointer;
@@ -93,6 +99,7 @@
     .mobile .proj-img {
         width: 350px;
         grid-column: 1/2;
+        object-fit: cover;
     }
 
     .mobile .title {
@@ -220,6 +227,7 @@
     .mobile .proj-img {
         width: 231px;
         height: 173px;
+        object-fit: cover;
     }
 
 

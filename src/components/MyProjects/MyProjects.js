@@ -38,7 +38,7 @@ class MyProjects extends React.Component {
         return [
             <div key="1" className="project-list-item mobile" onClick={() => this.onProjectClick(this.state.sliderContent.One)}>
                 <p className="title">Native Speaker</p>
-                <img className="proj-img" src="images/garden.jpg" alt="placeholder" />
+                <img className="proj-img" src="images/native-speaker.png" alt="native speaker project screenshot" />
                 <div className="test">
                     <div className="prev-icons">
                         <span>Code: <i className="fas fa-dollar-sign"></i></span>
@@ -51,7 +51,7 @@ class MyProjects extends React.Component {
             </div>,
             <div key="2" className="project-list-item mobile" onClick={() => this.onProjectClick(this.state.sliderContent.Two)}>
                 <p className="title">Portfolio</p>
-                <img className="proj-img" src="images/garden.jpg" alt="placeholder" />
+                <img className="proj-img" src="images/portfolio.png" alt="portfolio project screenshot" />
                 <div className="test">
                     <div className="prev-icons">
                         <span>Code: <i className="fas fa-code"></i></span>
@@ -64,7 +64,7 @@ class MyProjects extends React.Component {
             </div>,
             <div key="3" className="project-list-item mobile" onClick={() => this.onProjectClick(this.state.sliderContent.Three)}>
                 <p className="title">Equarium</p>
-                <img className="proj-img" src="images/garden.jpg" alt="placeholder" />
+                <img className="proj-img" src="images/equarium.png" alt="equarium project screenshot" />
                 <div className="test">
                     <div className="prev-icons">
                         <span>Code: <i className="fas fa-code"></i></span>
@@ -77,7 +77,7 @@ class MyProjects extends React.Component {
             </div>,
             <div key="4" className="project-list-item mobile" onClick={() => this.onProjectClick(this.state.sliderContent.Four)}>
                 <p className="title">Weather App</p>
-                <img className="proj-img" src="images/garden.jpg" alt="placeholder" />
+                <img className="proj-img" src="images/weather.png" alt="weather project screenshot" />
                 <div className="test">
                     <div className="prev-icons">
                         <span>Code: <i className="fas fa-code"></i></span>

@@ -15,19 +15,19 @@ class ProjectList extends React.Component {
         return (
             <div className="my-projects-list">
                 <div className="project-list-item" onClick={() => { this.props.onProjectClick(this.state.previewContent.One)}} >
-                    <img src="" alt="" />
+                    <img className="proj-img" src="images/native-speaker.png" alt="native speaker project screenshot" />
                     <p>Native Speaker</p>
                 </div>
                 <div className="project-list-item" onClick={() => { this.props.onProjectClick(this.state.previewContent.Two)}}>
-                    <img src="" alt="" />
+                    <img className="proj-img" src="images/portfolio.png" alt="portfolio project screenshot" />
                     <p>Portfolio</p>
                 </div>
                 <div className="project-list-item" onClick={() => { this.props.onProjectClick(this.state.previewContent.Three)}}>
-                    <img src="" alt="" />
+                    <img className="proj-img" src="images/equarium.png" alt="equarium project screenshot" />
                     <p>Equarium</p>
                 </div>
                 <div className="project-list-item" onClick={() => { this.props.onProjectClick(this.state.previewContent.Four)}}>
-                    <img src="" alt="" />
+                    <img className="proj-img" src="images/weather.png" alt="weather project screenshot" />
                     <p>Weather App</p>
                 </div>
             </div>
