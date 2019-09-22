@@ -109,33 +109,17 @@
 @media (max-width: 480px) {
 
     .contact {
-        min-height: 550px;
-        display: flex;
-        flex-direction: column;
+        min-height: 550px; 
+    }
+    .contact-details {
+        height: unset;
+        grid-template-rows: 1fr 50px;
     }
 
     .contact-text {
-        width: 90%;
-        position: relative;
-        top: 40%;
-       
-    }
-
-    .contact-details {
         margin: 0;
-        height: 65%;
-    }
-
-    .details-right{
-        margin-top: 100px;
-    } 
-        
-
-    .contactme-logo {
-        position: relative;
-        left: unset;
-        width: 250px;
-        height: 70px;
+        margin-bottom: 30px;
+        width: 80%;
     }
 
 }
