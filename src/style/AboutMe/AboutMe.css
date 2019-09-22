@@ -110,9 +110,11 @@
         grid-template-rows: 1fr 1fr;
         min-height: 540px;
     }
-
+    .aboutme-left {
+        justify-items: center;
+    }
     .aboutme-description {  
-        width: 100%;
+        width: 80%;
         top: 0px;
     }
 

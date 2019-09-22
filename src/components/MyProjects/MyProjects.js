@@ -12,7 +12,7 @@ class MyProjects extends React.Component {
 
         this.state = {
             previewContent: {
-                title: 'Select a project',
+                title: 'Click on a project',
                 solution: 'My contribution to the project'
             },
             sliderContent: projectDescription
@@ -29,7 +29,9 @@ class MyProjects extends React.Component {
         this.setState({
             previewContent: {
                 title: previewContent.title,
-                solution: previewContent.solution
+                solution: previewContent.solution,
+                code: previewContent.code,
+                live: previewContent.live
             }
         })
     }
@@ -42,7 +44,7 @@ class MyProjects extends React.Component {
                 <div className="test">
                     <div className="prev-icons">
                         <span>Code: <i className="fas fa-dollar-sign"></i></span>
-                        <span>Live: <i className="fas fa-window-maximize"></i></span>
+                        <a href={this.state.sliderContent.One.live} target="_blank" rel="noopener noreferrer">Live: <i className="fas fa-window-maximize"></i></a>
                     </div>
                     <p className="white-rec">
                         {this.state.sliderContent.One.solution}
@@ -54,8 +56,8 @@ class MyProjects extends React.Component {
                 <img className="proj-img" src="images/portfolio.png" alt="portfolio project screenshot" />
                 <div className="test">
                     <div className="prev-icons">
-                        <span>Code: <i className="fas fa-code"></i></span>
-                        <span>Live: <i className="fas fa-window-maximize"></i></span>
+                        <a href={this.state.sliderContent.Two.code} target="_blank" rel="noopener noreferrer">Code: <i className="fas fa-code"></i></a>
+                        <a href={this.state.sliderContent.Two.live} target="_blank" rel="noopener noreferrer">Live: <i className="fas fa-window-maximize"></i></a>
                     </div>
                     <p className="white-rec">
                         {this.state.sliderContent.Two.solution}
@@ -67,8 +69,8 @@ class MyProjects extends React.Component {
                 <img className="proj-img" src="images/equarium.png" alt="equarium project screenshot" />
                 <div className="test">
                     <div className="prev-icons">
-                        <span>Code: <i className="fas fa-code"></i></span>
-                        <span>Live: <i className="fas fa-window-maximize"></i></span>
+                        <a href={this.state.sliderContent.Three.code} target="_blank" rel="noopener noreferrer">Code: <i className="fas fa-code"></i></a>
+                        <a href={this.state.sliderContent.Three.live} target="_blank" rel="noopener noreferrer">Live: <i className="fas fa-window-maximize"></i></a>
                     </div>
                     <p className="white-rec">
                         {this.state.sliderContent.Three.solution}
@@ -80,8 +82,8 @@ class MyProjects extends React.Component {
                 <img className="proj-img" src="images/weather.png" alt="weather project screenshot" />
                 <div className="test">
                     <div className="prev-icons">
-                        <span>Code: <i className="fas fa-code"></i></span>
-                        <span>Live: <i className="fas fa-window-maximize"></i></span>
+                        <a href={this.state.sliderContent.Four.code} target="_blank" rel="noopener noreferrer">Code: <i className="fas fa-code"></i></a>
+                        <a href={this.state.sliderContent.Four.live} target="_blank" rel="noopener noreferrer">Live: <i className="fas fa-window-maximize"></i></a>
                     </div>
                     <p className="white-rec">
                         {this.state.sliderContent.Four.solution}
