@@ -88,8 +88,8 @@
     }
 
     .logo span {
-        word-break: keep-all;
-        width: 100%;
+        width: 300px;
+        height: unset;
     }
 
     .logo::before {
