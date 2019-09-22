@@ -19,8 +19,8 @@ const ContactList = () => {
                 </a>
             </li>
             <li className="contact-item">
-                <a href="https://www.facebook.com/maciej.hnat.3" target="_blank" rel="noopener noreferrer">
-                    <span>Facebook</span><i className="fab fa-facebook-square"></i>
+                <a href="https://m.me/maciej.hnat.3" target="_blank" rel="noopener noreferrer">
+                    <span>Messenger</span><i class="fab fa-facebook-messenger"></i>
                 </a>
             </li>
             

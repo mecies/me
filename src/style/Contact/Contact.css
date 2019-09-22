@@ -36,6 +36,11 @@
     top: 80px;
 }
 
+.contact-item a .fa-facebook-messenger {
+    position: relative;
+    left: 2px;
+}
+
 .details-right{
     display: flex;
     align-items: flex-end;
