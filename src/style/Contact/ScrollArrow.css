@@ -20,6 +20,13 @@
 @media (max-width: 480px) {
     
    .ue-scroll {
-       left: 45%;
+       left: 44%;
    }
+}
+
+@media (max-width: 350px) {
+
+    .ue-scroll {
+        left: 43%;
+    }
 }

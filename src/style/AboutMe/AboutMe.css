@@ -105,14 +105,30 @@
 @media (max-width: 480px) {
 
     .aboutme {
+        justify-items: center;
         height: 100vh;
         grid-template-rows: 1fr 1fr;
+        min-height: 540px;
     }
 
     .aboutme-description {  
-        width: 300px;
+        width: 100%;
         top: 0px;
     }
 
+    .aboutme-left {
+
+        width: 80%;
+    }
 }
 
+@media (max-width: 350px) {
+
+    .aboutme-logo {
+        width: 200px;
+    }
+
+     .aboutme-description {
+        font-size: 14px;
+     }
+}

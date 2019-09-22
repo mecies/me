@@ -18,6 +18,7 @@
     display: flex;
     justify-content: center;
     height: 100vh;
+    min-height: 800px;
 }
 
 .my-projects-logo-container {
@@ -74,9 +75,11 @@
     }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 480px) {
 
     .container {
-        min-height: unset;
+        min-height: 625px;
     }
 }
+
+

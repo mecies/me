@@ -40,7 +40,11 @@ class MyProjects extends React.Component {
                 <p className="title">Native Speaker</p>
                 <img className="proj-img" src="images/img_gal.jpg" alt="placeholder" />
                 <div className="test">
-                    <p>
+                    <div className="prev-icons">
+                        <span>Code: <i className="fas fa-dollar-sign"></i></span>
+                        <span>Live: <i className="fas fa-window-maximize"></i></span>
+                    </div>
+                    <p className="white-rec">
                         {this.state.sliderContent.One.solution}
                     </p>
                 </div>
@@ -49,7 +53,11 @@ class MyProjects extends React.Component {
                 <p className="title">Portfolio</p>
                 <img className="proj-img" src="images/img_gal.jpg" alt="placeholder" />
                 <div className="test">
-                    <p>
+                    <div className="prev-icons">
+                        <span>Code: <i className="fas fa-code"></i></span>
+                        <span>Live: <i className="fas fa-window-maximize"></i></span>
+                    </div>
+                    <p className="white-rec">
                         {this.state.sliderContent.Two.solution}
                     </p>
                 </div>
@@ -58,7 +66,11 @@ class MyProjects extends React.Component {
                 <p className="title">Equarium</p>
                 <img className="proj-img" src="images/img_gal.jpg" alt="placeholder" />
                 <div className="test">
-                    <p>
+                    <div className="prev-icons">
+                        <span>Code: <i className="fas fa-code"></i></span>
+                        <span>Live: <i className="fas fa-window-maximize"></i></span>
+                    </div>
+                    <p className="white-rec">
                         {this.state.sliderContent.Three.solution}
                     </p>
                 </div>
@@ -67,7 +79,11 @@ class MyProjects extends React.Component {
                 <p className="title">Weather App</p>
                 <img className="proj-img" src="images/img_gal.jpg" alt="placeholder" />
                 <div className="test">
-                    <p>
+                    <div className="prev-icons">
+                        <span>Code: <i className="fas fa-code"></i></span>
+                        <span>Live: <i className="fas fa-window-maximize"></i></span>
+                    </div>
+                    <p className="white-rec">
                         {this.state.sliderContent.Four.solution}
                     </p>
                 </div>
