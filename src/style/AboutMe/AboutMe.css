@@ -108,7 +108,7 @@
         justify-items: center;
         height: 100vh;
         grid-template-rows: 1fr 1fr;
-        min-height: 540px;
+        min-height: 600px;
     }
     .aboutme-left {
         justify-items: center;
@@ -131,6 +131,6 @@
     }
 
      .aboutme-description {
-        font-size: 14px;
+        font-size: 13px;
      }
 }
