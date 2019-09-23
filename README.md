@@ -9,5 +9,5 @@ Polish version coming soon<br />
 - Webpack, Babel & couple react-friendly libraries
 
 ## Author:
-- [me](https://github.com/mecies)
+[me](https://github.com/mecies)
 
