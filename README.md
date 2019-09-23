@@ -1,7 +1,7 @@
 # Portfolio
-Website where you can find my projects, see what I can do, find out about me and contact me.
-Available at [Maciej Hnat Portfolio](https://mecies.github.io/me/)
-Polish version coming soon
+Website where you can find my projects, see what I can do, find out about me and<br /> contact me.<br />
+Available at [Maciej Hnat Portfolio](https://mecies.github.io/me/) <br />
+Polish version coming soon<br />
 
 ## Built with
 - Figma - design
