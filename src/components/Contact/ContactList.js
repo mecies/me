@@ -20,7 +20,7 @@ const ContactList = () => {
             </li>
             <li className="contact-item">
                 <a href="https://m.me/maciej.hnat.3" target="_blank" rel="noopener noreferrer">
-                    <span>Messenger</span><i class="fab fa-facebook-messenger"></i>
+                    <span>Messenger</span><i className="fab fa-facebook-messenger"></i>
                 </a>
             </li>
             

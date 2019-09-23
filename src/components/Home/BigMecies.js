@@ -4,9 +4,9 @@ const BigMecies = () => {
     return (
         <div className="image-container">
             <picture className="image-container">
-                <source srcSet="images/cmaciekbw.png"
-                    media="(min-width: 800px)" />
-                <img className="image" src="images/cmaciekbw.png" alt="Maciej Hnat's photograph" />
+                <source media="(max-width: 1600px)" srcSet="images/cmaciekbw-medium.png" />
+                <source media="(min-width: 1601px)" srcSet="images/cmaciekbw.png" />
+                <img className = "image" loading="lazy" src="images/cmaciekbw-medium.png" alt="Maciej standing with arms crossed" />
             </picture>
         </div>             
     )
