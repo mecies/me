@@ -13,14 +13,14 @@
 
 .icons a {
     color: black;
-    font-size: 30px;
-    margin-left: 15px;
+    font-size: 40px;
+    margin-left: 20px;
 }
 
 .icons .flag {
-    height: 30px;
-    width: 30px;
-    margin-left: 15px;
+    height: 40px;
+    width: 40px;
+    margin-left: 20px;
 }
 
 .icons a:any-link {
@@ -40,3 +40,17 @@
     cursor: pointer;
 }
 
+@media (max-width: 480px) {
+
+    .icons a {
+        color: black;
+        font-size: 30px;
+        margin-left: 15px;
+    }
+
+    .icons .flag {
+        height: 30px;
+        width: 30px;
+        margin-left: 15px;
+    }
+}
