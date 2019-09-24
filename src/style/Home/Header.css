@@ -17,6 +17,12 @@
     margin-left: 20px;
 }
 
+.icons .flag {
+    height: 40px;
+    width: 40px;
+    margin-left: 20px;
+}
+
 .icons a:any-link {
     color: black;
 }
