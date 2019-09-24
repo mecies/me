@@ -13,14 +13,14 @@
 
 .icons a {
     color: black;
-    font-size: 40px;
-    margin-left: 20px;
+    font-size: 30px;
+    margin-left: 15px;
 }
 
 .icons .flag {
-    height: 40px;
-    width: 40px;
-    margin-left: 20px;
+    height: 30px;
+    width: 30px;
+    margin-left: 15px;
 }
 
 .icons a:any-link {
