@@ -1,11 +1,11 @@
 import React from 'react';
 
-const ContactList = () => {
+const ContactList = ({ email }) => {
     return (
         <ul className="contact-list">
             <li className="contact-item">
                 <a href='mailto:maciekhnat@gmail.com'>
-                    <span>Send me an email</span><i className="fas fa-envelope-square"></i>
+                    <span>{email}</span><i className="fas fa-envelope-square"></i>
                 </a>
             </li>
             <li className="contact-item">

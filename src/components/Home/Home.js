@@ -1,4 +1,4 @@
-import React, { useContext } from 'react';
+import React from 'react';
 import Header from './Header';
 import BigMecies from '../Home/BigMecies';
 import Logo from '../Logo';

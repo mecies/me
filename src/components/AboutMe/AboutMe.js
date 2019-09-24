@@ -8,7 +8,7 @@ import LanguageContext from '../../context/LanguageContext';
 const AboutMe = () => {
     const context = useContext(LanguageContext);
 
-    const description = context === 'english' ? {
+    const aboutmeText = context === 'english' ? {
         logo: "About me",
         firstParagraph: "A web developer located in ",
         city: "Wroclaw",
@@ -31,11 +31,11 @@ const AboutMe = () => {
     return (
             <div className="aboutme" id="aboutme">
                 <div className="aboutme-left">
-                    <Logo first={description.logo} second="" className="aboutme-logo"/>
+                    <Logo first={aboutmeText.logo} second="" className="aboutme-logo"/>
                     <p className="aboutme-description">
-                        {description.firstParagraph} <a href="https://www.wroclaw.pl/" target="_blank" rel="noopener noreferrer">{description.city}</a>{description.dot}
-                        {description.secondParagraph} <a href="http://www.ue.wroc.pl/" target="_blank" rel="noopener noreferrer">{description.uni}</a>{description.thirdParagraph + description.dot}<b />
-                        {description.fourthParagraph}
+                        {aboutmeText.firstParagraph} <a href="https://www.wroclaw.pl/" target="_blank" rel="noopener noreferrer">{aboutmeText.city}</a>{aboutmeText.dot}
+                        {aboutmeText.secondParagraph} <a href="http://www.ue.wroc.pl/" target="_blank" rel="noopener noreferrer">{aboutmeText.uni}</a>{aboutmeText.thirdParagraph + aboutmeText.dot}<b />
+                        {aboutmeText.fourthParagraph}
                 </p>
                 </div>
                 <ImageGallery />
