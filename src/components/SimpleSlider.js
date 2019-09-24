@@ -2,8 +2,10 @@ import React from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import LanguageContext from '../context/LanguageContext';
 
 class SimpleSlider extends React.Component {
+    static contextType = LanguageContext;
 
     constructor(props) {
         super(props);
@@ -11,22 +13,8 @@ class SimpleSlider extends React.Component {
             show: this.props.show
         };
     }
-
-
-  
-    renderProps = () => {
-        if(this.state.show) {
-            
-            this.state.show.map(slide => {
-                return (          
-                    <div key={slide.key}>
-                        {slide}
-                    </div>
-                )
-            })
-        }
-    }
     
+
     render() {
         const settings = {
             dots: false,
@@ -35,10 +23,9 @@ class SimpleSlider extends React.Component {
             slidesToShow: 1,
             slidesToScroll: 1
         };
-
         return (
             <Slider {...settings}>
-                {this.state.show}
+                {this.props.show}
             </Slider>
         )
     }

@@ -14,20 +14,14 @@ class MyProjects extends React.Component {
     constructor(props) {
         super(props);
 
-
         this.state = {
             previewContent: {
                 title: projectDescription.default.title,
-                solution: projectDescription.default.solution
+                solution: projectDescription.default.solution,
             },
-            sliderContent: projectDescription
+            sliderContent: projectDescription,
+            language: 'english'
         }
-    }
-
-    updatePreview(previewContent) {
-        this.setState({
-            previewContent
-        })
     }
 
     onProjectClick = (previewContent) => {
@@ -41,64 +35,146 @@ class MyProjects extends React.Component {
         })
     }
 
-    renderProjects() {
+    componentDidUpdate() {
+        if (this.context === "polish" && this.context !== this.state.language) {
+            this.setState({
+                previewContent: {
+                    title: projectDescription.defaultPL.title,
+                    solution: projectDescription.defaultPL.solution,
+                },
+                language: 'polish'
+            })
+        } else if (this.context === "english" && this.context !== this.state.language) {
+            this.setState({
+                previewContent: {
+                    title: projectDescription.default.title,
+                    solution: projectDescription.default.solution,
+                },
+                language: 'english'
+            })      
+        }
+    }
+
+    renderProjectsENG = () => {
+        const content = this.state.sliderContent
+        
         return [
-            <div key="1" className="project-list-item mobile" onClick={() => this.onProjectClick(this.state.sliderContent.One)}>
-                <p className="title">Native Speaker</p>
+            <div key="1" className="project-list-item mobile">
+                <p className="title">{content.One.title}</p>
                 <img className="proj-img" src="images/native-speaker.png" alt="native speaker project screenshot" />
                 <div className="test">
                     <div className="prev-icons">
                         <span>Code: <i className="fas fa-dollar-sign"></i></span>
-                        <a href={this.state.sliderContent.One.live} target="_blank" rel="noopener noreferrer">Live: <i className="fas fa-window-maximize"></i></a>
+                        <a href={content.One.live} target="_blank" rel="noopener noreferrer">Live: <i className="fas fa-window-maximize"></i></a>
                     </div>
                     <p className="white-rec">
-                        {this.state.sliderContent.One.solution}
+                        {content.One.solution}
                     </p>
                 </div>
             </div>,
-            <div key="2" className="project-list-item mobile" onClick={() => this.onProjectClick(this.state.sliderContent.Two)}>
-                <p className="title">Portfolio</p>
+            <div key="2" className="project-list-item mobile">
+                <p className="title">{content.Two.title}</p>
                 <img className="proj-img" src="images/portfolio.png" alt="portfolio project screenshot" />
                 <div className="test">
                     <div className="prev-icons">
-                        <a href={this.state.sliderContent.Two.code} target="_blank" rel="noopener noreferrer">Code: <i className="fas fa-code"></i></a>
-                        <a href={this.state.sliderContent.Two.live} target="_blank" rel="noopener noreferrer">Live: <i className="fas fa-window-maximize"></i></a>
+                        <a href={content.Two.code} target="_blank" rel="noopener noreferrer">Code: <i className="fas fa-code"></i></a>
+                        <a href={content.Two.live} target="_blank" rel="noopener noreferrer">Live: <i className="fas fa-window-maximize"></i></a>
                     </div>
                     <p className="white-rec">
-                        {this.state.sliderContent.Two.solution}
+                        {content.Two.solution}
                     </p>
                 </div>
             </div>,
-            <div key="3" className="project-list-item mobile" onClick={() => this.onProjectClick(this.state.sliderContent.Three)}>
-                <p className="title">Equarium</p>
+            <div key="3" className="project-list-item mobile">
+                <p className="title">{content.Three.title}</p>
                 <img className="proj-img" src="images/equarium.png" alt="equarium project screenshot" />
                 <div className="test">
                     <div className="prev-icons">
-                        <a href={this.state.sliderContent.Three.code} target="_blank" rel="noopener noreferrer">Code: <i className="fas fa-code"></i></a>
-                        <a href={this.state.sliderContent.Three.live} target="_blank" rel="noopener noreferrer">Live: <i className="fas fa-window-maximize"></i></a>
+                        <a href={content.Three.code} target="_blank" rel="noopener noreferrer">Code: <i className="fas fa-code"></i></a>
+                        <a href={content.Three.live} target="_blank" rel="noopener noreferrer">Live: <i className="fas fa-window-maximize"></i></a>
                     </div>
                     <p className="white-rec">
-                        {this.state.sliderContent.Three.solution}
+                        {content.Three.solution}
                     </p>
                 </div>
             </div>,
-            <div key="4" className="project-list-item mobile" onClick={() => this.onProjectClick(this.state.sliderContent.Four)}>
-                <p className="title">Weather App</p>
+            <div key="4" className="project-list-item mobile">
+                <p className="title">{content.Four.title}</p>
                 <img className="proj-img" src="images/weather.png" alt="weather project screenshot" />
                 <div className="test">
                     <div className="prev-icons">
-                        <a href={this.state.sliderContent.Four.code} target="_blank" rel="noopener noreferrer">Code: <i className="fas fa-code"></i></a>
-                        <a href={this.state.sliderContent.Four.live} target="_blank" rel="noopener noreferrer">Live: <i className="fas fa-window-maximize"></i></a>
+                        <a href={content.Four.code} target="_blank" rel="noopener noreferrer">Code: <i className="fas fa-code"></i></a>
+                        <a href={content.Four.live} target="_blank" rel="noopener noreferrer">Live: <i className="fas fa-window-maximize"></i></a>
                     </div>
                     <p className="white-rec">
-                        {this.state.sliderContent.Four.solution}
+                        {content.Four.solution}
                     </p>
                 </div>
             </div>
         ]
     }
 
-    render() {  
+    renderProjectsPL = () => {
+        const content = this.state.sliderContent
+
+        return [
+            <div key="1" className="project-list-item mobile">
+                <p className="title">{content.OnePL.title}</p>
+                <img className="proj-img" src="images/native-speaker.png" alt="native speaker project screenshot" />
+                <div className="test">
+                    <div className="prev-icons">
+                        <span>Kod: <i className="fas fa-dollar-sign"></i></span>
+                        <a href={content.OnePL.live} target="_blank" rel="noopener noreferrer">Na żywo: <i className="fas fa-window-maximize"></i></a>
+                    </div>
+                    <p className="white-rec">
+                        {content.OnePL.solution}
+                    </p>
+                </div>
+            </div>,
+            <div key="2" className="project-list-item mobile">
+                <p className="title">{content.TwoPL.title}</p>
+                <img className="proj-img" src="images/portfolio.png" alt="portfolio project screenshot" />
+                <div className="test">
+                    <div className="prev-icons">
+                        <a href={content.TwoPL.code} target="_blank" rel="noopener noreferrer">Kod: <i className="fas fa-code"></i></a>
+                        <a href={content.TwoPL.live} target="_blank" rel="noopener noreferrer">Na żywo:  <i className="fas fa-window-maximize"></i></a>
+                    </div>
+                    <p className="white-rec">
+                        {content.TwoPL.solution}
+                    </p>
+                </div>
+            </div>,
+            <div key="3" className="project-list-item mobile">
+                <p className="title">{content.ThreePL.title}</p>
+                <img className="proj-img" src="images/equarium.png" alt="equarium project screenshot" />
+                <div className="test">
+                    <div className="prev-icons">
+                        <a href={content.ThreePL.code} target="_blank" rel="noopener noreferrer">Kod: <i className="fas fa-code"></i></a>
+                        <a href={content.ThreePL.live} target="_blank" rel="noopener noreferrer">Na żywo:  <i className="fas fa-window-maximize"></i></a>
+                    </div>
+                    <p className="white-rec">
+                        {content.ThreePL.solution}
+                    </p>
+                </div>
+            </div>,
+            <div key="4" className="project-list-item mobile">
+                <p className="title">{content.FourPL.title}</p>
+                <img className="proj-img" src="images/weather.png" alt="weather project screenshot" />
+                <div className="test">
+                    <div className="prev-icons">
+                        <a href={content.FourPL.code} target="_blank" rel="noopener noreferrer">Kod: <i className="fas fa-code"></i></a>
+                        <a href={content.FourPL.live} target="_blank" rel="noopener noreferrer">Na żywo: <i className="fas fa-window-maximize"></i></a>
+                    </div>
+                    <p className="white-rec">
+                        {content.FourPL.solution}
+                    </p>
+                </div>
+            </div>
+        ]
+    }
+
+    render() { 
+        
         const projectsText = this.context === "english" ? {
             preview: {
                 projectIdea: "Have a cool project idea? ",
@@ -128,14 +204,13 @@ class MyProjects extends React.Component {
                         <ProjectList onProjectClick={this.onProjectClick} />
                         <Preview previewContent={this.state.previewContent} previewText={projectsText.preview}/>
                         <div className="slider-container">
-                            <SimpleSlider show={this.renderProjects()} updatePreview={this.updatePreview} />
+                            <SimpleSlider show={this.state.language === "english" ? this.renderProjectsENG() : this.renderProjectsPL()}/>
                         </div>
                     </div>
                 </div>
             </div>
         )
     }
-
 }
 
 

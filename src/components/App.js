@@ -17,7 +17,6 @@ class App extends React.Component {
     }
 
     onLanguageChange = (language) => {
-
         this.setState({ 
             language: language,
         })
@@ -27,7 +26,7 @@ class App extends React.Component {
         return (
             <div className="app-container">
                 <LanguageContext.Provider value={this.state.language}>
-                    <Home language={this.state.language} callback={this.onLanguageChange}/>
+                    <Home callback={this.onLanguageChange}/>
                     <MyProjects preview={this.state.previewText}/>
                     <AboutMe />
                     <Contact />
