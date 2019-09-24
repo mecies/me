@@ -23,7 +23,6 @@ const ContactList = ({ email }) => {
                     <span>Messenger</span><i className="fab fa-facebook-messenger"></i>
                 </a>
             </li>
-            
         </ul>
     )
 }

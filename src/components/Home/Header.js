@@ -2,7 +2,7 @@ import React from 'react';
 import Hamburger from './Hamburger';
 
 class Header extends React.Component {
-    state = { language: this.props.language }
+    state = { language: this.props.language, }
 
     render() {
         return (

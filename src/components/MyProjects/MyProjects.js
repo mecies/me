@@ -5,15 +5,20 @@ import Logo from '../Logo';
 import SimpleSlider from '../SimpleSlider';
 import projectDescription from './projectDescription';
 
+import LanguageContext from '../../context/LanguageContext';
+
 class MyProjects extends React.Component {
+
+    static contextType = LanguageContext;
 
     constructor(props) {
         super(props);
 
+
         this.state = {
             previewContent: {
-                title: 'Click on a project',
-                solution: 'My contribution to the project'
+                title: projectDescription.default.title,
+                solution: projectDescription.default.solution
             },
             sliderContent: projectDescription
         }
@@ -92,17 +97,36 @@ class MyProjects extends React.Component {
             </div>
         ]
     }
-    
-    render() {
+
+    render() {  
+        const projectsText = this.context === "english" ? {
+            preview: {
+                projectIdea: "Have a cool project idea? ",
+                link: "Contact me",
+                code: "Code",
+                live: "Live"
+            },
+            logo: "My projects",
+        } : {
+            preview: {
+                projectIdea: "Masz pomysł na ciekawy projekt? ",
+                link: "Skontaktuj się ze mną",
+                code: "Kod",
+                live: "Na żywo"
+
+            },
+            logo: "Projekty",
+        };
+
         return (
             <div className="container" id="myprojects">
                 <div className="my-projects">
                     <div className="my-projects-logo-container">
-                        <Logo first="My projects" second="" className="my-projects-logo" />
+                        <Logo first={projectsText.logo} second="" className="my-projects-logo" />
                     </div>
                     <div className="my-projects-bottom">
                         <ProjectList onProjectClick={this.onProjectClick} />
-                        <Preview previewContent={this.state.previewContent} />
+                        <Preview previewContent={this.state.previewContent} previewText={projectsText.preview}/>
                         <div className="slider-container">
                             <SimpleSlider show={this.renderProjects()} updatePreview={this.updatePreview} />
                         </div>

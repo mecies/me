@@ -7,10 +7,20 @@ import Contact from './Contact/Contact';
 import LanguageContext from '../context/LanguageContext';
 
 class App extends React.Component {
-    state = { language: 'english' }
+    constructor(props) {
+        super(props);
 
-    onLanguageChange = language => {
-        this.setState({ language })
+        this.state = {
+            language: 'english'
+        }
+
+    }
+
+    onLanguageChange = (language) => {
+
+        this.setState({ 
+            language: language,
+        })
     }
 
     render() {
@@ -18,7 +28,7 @@ class App extends React.Component {
             <div className="app-container">
                 <LanguageContext.Provider value={this.state.language}>
                     <Home language={this.state.language} callback={this.onLanguageChange}/>
-                    <MyProjects />
+                    <MyProjects preview={this.state.previewText}/>
                     <AboutMe />
                     <Contact />
                 </LanguageContext.Provider>
