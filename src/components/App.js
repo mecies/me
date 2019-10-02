@@ -1,10 +1,14 @@
 import React from 'react';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 import '../style/App.css'
 import Home from './Home/Home';
 import AboutMe from './AboutMe/AboutMe';
 import MyProjects from './MyProjects/MyProjects';
 import Contact from './Contact/Contact';
 import LanguageContext from '../context/LanguageContext';
+
+AOS.init();
 
 class App extends React.Component {
     constructor(props) {

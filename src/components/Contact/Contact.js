@@ -21,7 +21,7 @@ class Contact extends React.Component {
         };
 
         return (
-            <div id="contactme" className="contact">
+            <div id="contactme" className="contact" data-aos="fade-up" data-aos-duration="1000">
                 <div className="logo-container">
                     <Logo first={contactText.logo} second="" className="contactme-logo" />
                 </div>

@@ -29,7 +29,7 @@ const AboutMe = () => {
     };
 
     return (
-            <div className="aboutme" id="aboutme">
+        <div className="aboutme" id="aboutme" data-aos="fade-up" data-aos-duration="1000">
                 <div className="aboutme-left">
                     <Logo first={aboutmeText.logo} second="" className="aboutme-logo"/>
                     <p className="aboutme-description">

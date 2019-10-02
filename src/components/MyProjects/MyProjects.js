@@ -195,7 +195,7 @@ class MyProjects extends React.Component {
         };
 
         return (
-            <div className="container" id="myprojects">
+            <div className="container" id="myprojects" data-aos="fade-up" data-aos-duration="1000">
                 <div className="my-projects">
                     <div className="my-projects-logo-container">
                         <Logo first={projectsText.logo} second="" className="my-projects-logo" />
