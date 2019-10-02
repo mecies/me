@@ -5,15 +5,15 @@ class ImageGallery extends React.Component {
 
     renderImages = () => {
         return (
-            [
+            [   
+                <div className="image-container" key="img3">
+                    <img className="gal-image" src="images/garden.jpg" alt="placeholder" />
+                </div>,
                 <div className="image-container" key="img1">
                     <img className="gal-image" src="images/clouds.jpg" alt="clouds" />
                 </div>,
                 <div className="image-container" key="img2">
                     <img className="gal-image" src="images/hangin.jpg" alt="placeholder" />
-                </div>,
-                <div className="image-container" key="img3">
-                    <img className="gal-image" src="images/garden.jpg" alt="placeholder" />
                 </div>
             ]
         )
