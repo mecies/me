@@ -154,4 +154,12 @@
     .hamburger-inner::after {
         top: 8px;
     }
+
+    .active .hamburger-inner::before {
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .active .hamburger-inner::after {
+        transform: translateY(-8px) rotate(-45deg);
+    }
 }
