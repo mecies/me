@@ -84,7 +84,7 @@
     transform: translateX(-250px);
     z-index: 10;
     font-family: "Roboto",
-    sans-serif;
+        sans-serif;
 }
 
 .navigation-active {
@@ -141,5 +141,17 @@
     .active {
         transform: translateX(calc(100vw - 80px));
         z-index: 11;
+    }
+
+    .hamburger-inner::before {
+        top: -8px;
+    }
+
+    .hamburger-box {
+        width: 30px;
+    }
+
+    .hamburger-inner::after {
+        top: 8px;
     }
 }
