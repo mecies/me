@@ -15,10 +15,30 @@
     left: 200px;
     font-size: 60px;
     font-family: "Roboto",
-    sans-serif;
+        sans-serif;
 }
 
 .home-logo {
     position: absolute !important;
+
 }
 
+@media (max-width: 1200px) {
+    .home-container .home-logo {
+        position: absolute !important;
+        left: 100px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .home-container .home-logo {
+        left: 50px;
+    }
+}
+
+@media (max-width: 768px) {
+    .home-container .home-logo {
+        left: 50px;
+        top: 20%;
+    }
+}

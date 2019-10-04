@@ -1,7 +1,8 @@
 .image-container {
     overflow: hidden;
 }
-.image{
+
+.image {
     width: 45%;
     object-fit: cover;
     object-position: center center;
@@ -12,10 +13,33 @@
     bottom: 0px;
 
 }
+
 /*  work on animating opacity */
 
 @media (max-width: 1200px) {
     .image {
-        display: none
+        width: 50%;
+        right: 0;
+    }
+}
+
+@media (max-width: 1024px) {
+    .image {
+        width: 60%;
+        right: 0;
+    }
+}
+
+@media (max-width: 768px) {
+    .image {
+        width: 70%;
+        right: 100px;
+    }
+}
+
+@media (max-width: 480px) {
+    .image {
+        width: 100%;
+        right: 0;
     }
 }

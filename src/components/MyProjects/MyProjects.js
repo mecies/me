@@ -182,7 +182,7 @@ class MyProjects extends React.Component {
                 code: "Code",
                 live: "Live"
             },
-            logo: "My projects",
+            logo: "Projects",
         } : {
             preview: {
                 projectIdea: "Masz pomysł na ciekawy projekt? ",

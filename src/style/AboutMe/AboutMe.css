@@ -23,7 +23,7 @@
 }
 
 .aboutme-logo::after {
-    
+
     left: -15px;
     top: -5px;
     z-index: 1;
@@ -49,7 +49,7 @@
     font-size: 20px;
     line-height: 1.3;
     font-family: 'Manjari',
-    sans-serif;
+        sans-serif;
 }
 
 .aboutme-left {
@@ -59,7 +59,7 @@
     align-items: center;
 }
 
-.aboutme-description a{
+.aboutme-description a {
     color: #FD85FF;
     font-weight: 700;
 }
@@ -110,10 +110,12 @@
         grid-template-rows: 1fr 1fr;
         min-height: 600px;
     }
+
     .aboutme-left {
         justify-items: center;
     }
-    .aboutme-description {  
+
+    .aboutme-description {
         width: 80%;
         top: 0px;
         font-size: 15px;
@@ -123,6 +125,10 @@
         font-size: 13px;
         width: 80%;
     }
+
+    .aboutme-logo {
+        width: 230px;
+    }
 }
 
 @media (max-width: 350px) {
@@ -131,7 +137,7 @@
         width: 200px;
     }
 
-     .aboutme-description {
+    .aboutme-description {
         font-size: 13px;
-     }
+    }
 }
