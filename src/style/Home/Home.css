@@ -23,6 +23,18 @@
 
 }
 
+.home-container .logo::before {
+    z-index: -1;
+}
+
+.home-container .logo::after {
+    z-index: -1;
+}
+
+.home-container .logo {
+    z-index: 1;
+}
+
 @media (max-width: 1200px) {
     .home-container .home-logo {
         position: absolute !important;
