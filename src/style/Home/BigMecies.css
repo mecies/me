@@ -37,6 +37,13 @@
     }
 }
 
+@media (max-width: 900px) and (orientation: landscape) {
+    .image {
+        width: 40%;
+        right: 0;
+    }
+}
+
 @media (max-width: 480px) {
     .image {
         width: 100%;
