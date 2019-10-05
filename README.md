@@ -1,7 +1,7 @@
 # Portfolio
 Website where you can find my projects, see what I can do, find out about me and contact me.<br />
 Available at [Maciej Hnat Portfolio](https://mecies.github.io/me/) <br />
-Polish version coming soon<br />
+Available in Polish and English <br />
 
 ## Built with
 - Figma - design
@@ -10,4 +10,8 @@ Polish version coming soon<br />
 
 ## Author:
 [me](https://github.com/mecies)
+
+### Project status:
+in progress
+
 
