@@ -12,6 +12,6 @@ Available in Polish and English <br />
 [me](https://github.com/mecies)
 
 ### Project status:
-in progress
+Finished & Deprecated
 
 
